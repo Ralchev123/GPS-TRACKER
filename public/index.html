@@ -1,0 +1,59 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESP32 GPS Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>ESP32 GPS Tracker</h1>
+    
+    <div class="status" id="connectionStatus">
+      Connecting to server...
+    </div>
+    
+    <div class="data-container">
+      <div class="card">
+        <div class="timestamp" id="timestamp">No data received yet</div>
+        <h2>Latest Values</h2>
+        <div class="data-grid" id="dataGrid">
+          <div class="data-item">
+            <div class="data-label">Waiting for data...</div>
+          </div>
+        </div>
+        
+        <h3>Raw Data</h3>
+        <div class="raw-data" id="rawData">No data received yet</div>
+      </div>
+      
+      <div class="map-container">
+        <div class="map-card">
+          <h2>GPS Location</h2>
+          <div class="coordinates">
+            <div class="coordinate-item">
+              <div class="data-label">Latitude</div>
+              <div class="data-value" id="latitude">--</div>
+            </div>
+            <div class="coordinate-item">
+              <div class="data-label">Longitude</div>
+              <div class="data-value" id="longitude">--</div>
+            </div>
+          </div>
+          <div id="map"></div>
+          <div class="path-controls">
+            <span id="pathPoints">0 points in path</span>
+            <button id="clearPath">Clear Path</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

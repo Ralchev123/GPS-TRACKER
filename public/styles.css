@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+  
+  .data-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .timestamp {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+  
+  .data-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .data-item {
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .data-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .data-value {
+    font-size: 1.2em;
+  }
+  
+  .raw-data {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 15px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    overflow-x: auto;
+  }
+  
+  .status {
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .online {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .offline {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  #map {
+    height: 400px;
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 15px;
+  }
+  
+  .map-container {
+    flex: 2;
+    min-width: 400px;
+  }
+  
+  .map-card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .coordinates {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .coordinate-item {
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    padding: 10px;
+    flex: 1;
+  }
+  
+  .path-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  button {
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #3367D6;
+  }
